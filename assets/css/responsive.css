@@ -1,0 +1,132 @@
+/* // XX-Large devices (large desktops, less than 2560px) */
+
+@media (max-width: 2560px) {
+    .hero_sec .ask_a_question {
+        right: -2%;
+    }
+}
+
+
+/* // X-Large devices (large desktops, less than 1400px) */
+
+@media (max-width: 1399.98px) {}
+
+
+/* // Large devices (desktops, less than 1200px) */
+
+@media (max-width: 1199.98px) {}
+
+
+/* // Medium devices (tablets, less than 992px) */
+
+@media (max-width: 991.98px) {
+    /* hero section */
+    .hero_sec .welcome_sec .hero_heading .welcome_heading {
+        font-size: 3rem;
+    }
+    /* hero section end */
+    /* all heading font size */
+    .heading_text {
+        font-size: 20px;
+    }
+    /* about section */
+    .about_sec .paragraph_tex_sec p {
+        padding: 0px 0 0 40px;
+    }
+}
+
+
+/* // Small devices (landscape phones, less than 768px) */
+
+@media (max-width: 767.98px) {
+    /* main menu */
+    .main_menu .dropdown_menu {
+        position: initial !important;
+    }
+    .main_menu .main_form {
+        left: 25% !important;
+    }
+    /*hero section */
+    .aling_center {
+        text-align: center !important;
+        margin-bottom: 20px;
+    }
+    .right_text {
+        text-align: left !important;
+    }
+    .hero_sec .hero_heading {
+        margin: 0 auto;
+        text-align: center;
+    }
+    /*about section */
+    .icon_card {
+        padding: 50px 0 80px;
+    }
+    .about_sec .paragraph_tex_sec p {
+        padding: 20px 0;
+    }
+    .about_sec .paragraph_tex_sec p:last-child {
+        padding-bottom: 0;
+    }
+    /*register section */
+    .register_box {
+        margin-top: 40px;
+    }
+    /*footer section */
+    .footer_sec {
+        padding: 50px 0 45px!important;
+    }
+    .inner_logo {
+        flex-direction: column;
+    }
+    .copy_text {
+        padding-top: 15px;
+    }
+    .inner_terms,
+    .inner_icon {
+        justify-content: center !important;
+        padding-top: 20px;
+    }
+}
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .hero_heading .welcome_heading {
+        font-size: 2rem !important;
+    }
+    .main_menu .main_form {
+        left: 1% !important;
+    }
+    .icon_card {
+        padding: 30px 15px 60px;
+    }
+    .about_sec {
+        padding: 60px 15px 0px;
+    }
+    .flex-sm-column-reverse {
+        flex-direction: column-reverse;
+    }
+    .register_sec {
+        padding: 60px 15px 29px;
+    }
+    .hero_heading .welcome_heading {
+        font-size: 2rem;
+    }
+    .hero_sec .ask_a_question {
+        right: -15% !important;
+    }
+    .registration_request .athlete {
+        padding: 0 15px 0;
+    }
+    .step_sec {
+        padding: 30px 15px 30px;
+    }
+}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}

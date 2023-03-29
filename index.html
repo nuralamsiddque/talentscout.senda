@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="add keywords" />
+    <meta name="description" content="add project description" />
+    <title>Talent Scout Rugby</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl_carousel.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="main_menu">
+        <nav class="navbar navbar-expand-md navbar-white fixed-top nav_menu_item pt-0 pb-0 ">
+            <div class="container-fluid ps-0 pe-0">
+                <a class="navbar-brand logo" href="#">
+                    <img src="assets/img/logored.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fas fa-bars text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarsExample03">
+                    <ul class="navbar-nav m-auto main_menu_item">
+                        <!-- Dropdown Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle " aria-current="page " href="#">Sports</a>
+                            <ul class="dropdown_menu pb-3 pt-3">
+                                <li><a class="dropdown-item " href="#">- Athletics</a></li>
+                                <li><a class="dropdown-item " href="#">- AFL</a></li>
+                                <li><a class="dropdown-item " href="#">- Baseball</a></li>
+                                <li><a class="dropdown-item " href="#">- Rugby</a></li>
+                            </ul>
+                        </li>
+                        <!--  Dropdown Menu end -->
+                        <li class="nav-item">
+                            <a class="nav-link " href="# ">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="# ">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="# ">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav nav_menu_item ">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="# " data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                            <!-- login Form -->
+                            <div class="modal fade main_form" id="loginModal" tabindex="1" aria-labelledby="loginModallLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content mt-5" style="width: 300px;">
+                                        <div class="login_form">
+                                            <div class="login_img">
+                                                <p class="login_text">Login</p>
+                                                <div class="border_bottom"></div>
+                                            </div>
+                                            <form class="row g-4 align-items-center needs-validation inner_form" novalidate>
+                                                <div class="col-12">
+                                                    <input type="text" class="form-control" placeholder="First name" aria-label="First name" id="validationCustom01" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <input type="password" class="form-control" placeholder="Enter password" aria-label="Last name" id="validationCustom01" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <input class="logn_btn" type="submit" value="Login">
+                                                </div>
+                                                <div class="forget_sec text-end">
+                                                    <a href="http://" target="_blank" rel="noopener noreferrer">Forgot password?</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- login Form end -->
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+                        </li>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header model_header_black">
+                                        <ul class="main_menu d-flex justify-content-between w-100 align-items-center">
+                                            <li class="">
+                                                <a href="" class=""><img src="assets/img/logo.png" class="rounded mx-auto d-block" alt="..."></a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="">Back to mainpage<i class="fas fa-times ps-2"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-body p-0">
+                                        <!-- Registration request-->
+                                        <section class="registration_request">
+                                            <div class="container-fluid">
+                                                <div class="row pt-1 heading_text">
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <p class=""><a href="#" class="">registration request</a></p>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <p class=""><a href="#" class="">complete profile</a></p>
+                                                    </div>
+                                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                                        <p class="actives"><a href="#" class="selects">select subscription</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container">
+                                                <div class="row pt-lg-5 pt-md-5 pt-sm-4 pb-md-5 pb-sm-4 subscription_sec align-items-center">
+                                                    <div class="col-lg-6 col-md-6 col-sm-8">
+                                                        <h2 class="mb-1">Select subscription</h2>
+                                                        <div class="border_bottom small_pb"></div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-4 text-md-end text-sm-start pt-sm-4 step_sec">
+                                                        <p class="">Step 3 of 3 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container bg_colors pt-3">
+                                                <div class="row">
+                                                    <nav class="tab_nav">
+                                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Athlete</button>
+                                                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sport Club</button>
+                                                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">School/University</button>
+                                                            <button class="nav-link" id="nav-contact-test-tab" data-bs-toggle="tab" data-bs-target="#nav-contact-test" type="button" role="tab" aria-controls="nav-contact-test" aria-selected="false">Agent</button>
+                                                        </div>
+                                                    </nav>
+                                                    <div class="tab-content" id="nav-tabContent tab_active">
+                                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                                            <div class="athlete ps-lg-4  pb-lg-5 p-sm-4">
+                                                                <h3 class="welcome_h_text pt-5 pb-4">Welcome to Talent Scout</h3>
+                                                                <form class="row g-3 needs-validation r_request_form" novalidate>
+                                                                    <div class="col-md-2 col-sm-12">
+                                                                        <select class="form-select select_fild" id="validationCustom04" required>
+                                                                    <option selected>Mr</option>
+                                                                    <option>Md</option>
+                                                                    <option>Mst</option>
+                                                                    </select>
+                                                                        <div class="invalid-feedback">
+                                                                            Please select a valid state.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-12">
+                                                                        <label for="validationCustom02" class="form-label">Name</label>
+                                                                        <input type="text" class="form-control" id="validationCustom02" required>
+                                                                        <div class="valid-feedback">
+                                                                            Looks good!
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-12">
+                                                                        <label for="validationCustom01" class="form-label">Subname</label>
+                                                                        <input type="text" class="form-control" id="validationCustom01" required>
+                                                                        <div class="valid-feedback">
+                                                                            Looks good!
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2 m-0"></div>
+                                                                    <div class="col-md-2 m-0"></div>
+                                                                    <div class="col-md-8 col-sm-12">
+                                                                        <label for="validationCustom03" class="form-label">Email</label>
+                                                                        <input type="email" class="form-control" id="validationCustom03" required>
+                                                                        <div class="invalid-feedback">
+                                                                            Please provide a valid Email.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2 m-0"></div>
+                                                                    <div class="col-md-2 m-0"></div>
+                                                                    <div class="col-md-4 col-sm-12">
+                                                                        <label for="validationCustom06" class="form-label">Create Password</label>
+                                                                        <input id="psw-input" type="password" class="form-control" required>
+                                                                        <div id="pswmeter" class="mt-3"></div>
+                                                                        <div id="pswmeter-message" class="mt-3"></div>
+                                                                        <div class="invalid-feedback">
+                                                                            Please provide a valid Password.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-12">
+                                                                        <label for="validationCustom05" class="form-label">Repeat password</label>
+                                                                        <input type="password" class="form-control" id="validationCustom05" required>
+                                                                        <div class="invalid-feedback">
+                                                                            Please provide a valid Repeat password.
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2 m-0"></div>
+                                                                    <div class="col-md-2 m-0"></div>
+                                                                    <div class="col-md-8 col-sm-12">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                                            <label class="form-check-label" for="invalidCheck">
+                                                                                <a href="" class=""><u>Terms and Conditions</u></a> in consequat, quam id sodales hendrerit, eros mi molestie leo, nec lacinia risus neque tristique augue.
+                                                                            </label>
+                                                                            <div class="invalid-feedback">
+                                                                                You must agree before submitting.
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-2"></div>
+                                                                    <div class="col-12 text-md-end button_sec">
+                                                                        <button class="submit_btn" type="submit">Submit</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                                            <div class="athlete">...2</div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                                            <div class="athlete">...3</div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="nav-contact-test" role="tabpanel" aria-labelledby="nav-contact-test-tab">
+                                                            <div class="athlete">....4</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </section>
+                                        <!-- end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <!-- Hero Section -->
+    <section class="hero_sec d-flex align-items-center overflow-hidden">
+        <div class="container">
+            <div class="welcome_sec">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-end aling_center">
+                        <span class="hero_button"><i class="fas fa-play-circle"></i></span><span class="play_text">See what we do</span>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="hero_heading">
+                            <h1 class="welcome_heading">Who is this site for?</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner_video_sec">
+            <video autoplay muted loop>
+                <source src="assets/video/Rugby.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <!-- Hero Section end -->
+    <!-- about Section -->
+    <section class="about_sec">
+        <div class="container">
+            <div class="text_row">
+                <div class="row pb-5">
+                    <div class="col-md-6">
+                        <div class="left_text">
+                            <h2 class="heading_text text-white">About Us </h2>
+                            <div class="border_bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="inner_image">
+                        <img src="assets/img/about1new (1).png" class="mx-auto d-block" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="paragraph_tex_sec">
+                        <p>We promote and connect Athletes with leading Sporting Cubs, Agents and Universities Talent Scout is an organization comprised of experienced scouts who evaluate athletes for and provide personal guidance through their recruiting
+                            process.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4 flex-sm-column-reverse flex-md-row">
+                <div class="col-md-6">
+                    <div class="paragraph_tex_sec">
+                        <p>We promote and connect Athletes with leading Sporting Cubs, Agents and Universities Talent Scout is an organization comprised of experienced scouts who evaluate athletes for and provide personal guidance through their recruiting
+                            process.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="inner_image">
+                        <img src="assets/img/about2new.png" class="mx-auto d-block" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about Section end -->
+    <!-- Icon Card -->
+    <section class="icon_card padding_t_b">
+        <div class="container ">
+            <div class="text_row">
+                <div class="row pb-5">
+                    <div class="col-md-6">
+                        <div class="left_text">
+                            <h2 class="heading_text text-white">Please create account to start </h2>
+                            <div class="border_bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right_text pt-2 text-end">
+                            <p><i class="fas fa-star"></i>324 456 active users now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_row">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-4">
+                        <article class="card_sec h-100 d-flex flex-column justify-content-between">
+                            <div class="card_top_sec">
+                                <div class="card_img">
+                                    <img src="assets/img/icon-athlete.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                                <div class="sport_name">
+                                    <p class="author_name">Im Athlete</p>
+                                </div>
+                            </div>
+                            <div class="card_bottom_sec text-center pt-4">
+                                <a class="btn_sec" class="btn_sec" href="#" target="_blank" rel="noopener noreferrer">select</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-4">
+                        <article class="card_sec h-100 d-flex flex-column justify-content-between">
+                            <div class="card_top_sec">
+                                <div class="card_img">
+                                    <img src="assets/img/icon-athlete.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                                <div class="sport_name">
+                                    <p class="author_name">I'm sport club owner</p>
+                                </div>
+                            </div>
+                            <div class="card_bottom_sec text-center pt-4">
+                                <a class="btn_sec" href="#" target="_blank" rel="noopener noreferrer">select</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-4">
+                        <article class="card_sec h-100 d-flex flex-column justify-content-between">
+                            <div class="card_top_sec">
+                                <div class="card_img">
+                                    <img src="assets/img/icon-athlete.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                                <div class="sport_name">
+                                    <p class="author_name">I'm school/university member
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card_bottom_sec text-center pt-4">
+                                <a class="btn_sec" href="#" target="_blank" rel="noopener noreferrer">select</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 pb-4">
+                        <article class="card_sec h-100 d-flex flex-column justify-content-between">
+                            <div class="card_top_sec">
+                                <div class="card_img">
+                                    <img src="assets/img/icon-athlete.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                                <div class="sport_name">
+                                    <p class="author_name">I'm sport agent</p>
+                                </div>
+                            </div>
+                            <div class="card_bottom_sec text-center pt-4">
+                                <a class="btn_sec" href="#" target="_blank" rel="noopener noreferrer">select</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="text_row">
+                <div class="row pt-4">
+                    <div class="col-md-6">
+                        <div class="left_text">
+                            <p class="paragraphs_text text-white">Please select one of option above. If you have any question please contact us directly</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right_text">
+                            <div class="contact_btn">
+                                <a class="show_more_btn" href="#" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Icon Card end -->
+    <!-- team Card -->
+    <section class="team_card_sec padding_t_b">
+        <div class="container">
+            <div class="team_row" id="">
+                <div class="owl-carousel">
+                    <div class="inner_carousel">
+                        <article class="card_sec h-100 d-flex flex-column justify-content-between">
+                            <div class="card_top_sec">
+                                <div class="card_img">
+                                    <img src="assets/img/rugbyimage.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                                <div class="card_bottom_sec pb-4 pt-4 pe-4 ps-4 d-flex justify-content-between">
+                                    <span class="pro_sec">Baseball</span><span class="pro_icon"><i class="fas fa-user"></i>3.5k</span>
+                                </div>
+                                <div class="team_button pt-5 pb-4 pe-4 ps-4 text-center">
+                                    <a class="select_btn" href="#" class="blank">Select</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="inner_carousel">
+                        <article class="card_sec h-100 d-flex flex-column justify-content-between">
+                            <div class="card_top_sec">
+                                <div class="card_img">
+                                    <img src="assets/img/rugbyimage.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                                <div class="card_bottom_sec pb-4 pt-4 pe-4 ps-4 d-flex justify-content-between">
+                                    <span class="pro_sec">Baseball</span><span class="pro_icon"><i class="fas fa-user"></i>3.5k</span>
+                                </div>
+                                <div class="team_button pt-5 pb-4 pe-4 ps-4 text-center">
+                                    <a class="select_btn" href="#" class="blank">Select</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="inner_carousel">
+                        <article class="card_sec h-100 d-flex flex-column justify-content-between">
+                            <div class="card_top_sec">
+                                <div class="card_img">
+                                    <img src="assets/img/rugbyimage.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                                <div class="card_bottom_sec pb-4 pt-4 pe-4 ps-4 d-flex justify-content-between">
+                                    <span class="pro_sec">Baseball</span><span class="pro_icon"><i class="fas fa-user"></i>3.5k</span>
+                                </div>
+                                <div class="team_button pt-5 pb-4 pe-4 ps-4 text-center">
+                                    <a class="select_btn" href="#" class="blank">Select</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="inner_carousel">
+                        <article class="card_sec h-100 d-flex flex-column justify-content-between">
+                            <div class="card_top_sec">
+                                <div class="card_img">
+                                    <img src="assets/img/rugbyimage.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                                <div class="card_bottom_sec pb-4 pt-4 pe-4 ps-4 d-flex justify-content-between">
+                                    <span class="pro_sec">Baseball</span><span class="pro_icon"><i class="fas fa-user"></i>3.5k</span>
+                                </div>
+                                <div class="team_button pt-5 pb-4 pe-4 ps-4 text-center">
+                                    <a class="select_btn" href="#" class="blank">Select</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="inner_carousel">
+                        <article class="card_sec h-100 d-flex flex-column justify-content-between">
+                            <div class="card_top_sec">
+                                <div class="card_img">
+                                    <img src="assets/img/rugbyimage.png" class="rounded mx-auto d-block" alt="...">
+                                </div>
+                                <div class="card_bottom_sec pb-4 pt-4 pe-4 ps-4 d-flex justify-content-between">
+                                    <span class="pro_sec">Baseball</span><span class="pro_icon"><i class="fas fa-user"></i>3.5k</span>
+                                </div>
+                                <div class="team_button pt-5 pb-4 pe-4 ps-4 text-center">
+                                    <a class="select_btn" href="#" class="blank">Select</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- team card end -->
+    <section class="blank pt-5 pb-4 bg-dark"></section>
+    <!-- register section -->
+    <section class="register_sec">
+        <div class="container">
+            <div class="text_row">
+                <div class="row pb-5 align-items-center ">
+                    <div class="col-md-4">
+                        <div class="left_text text">
+                            <h2 class="heading_text">Ready to start ?</h2>
+                            <div class="border_bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="register_box">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-12">
+                                    <p class="box_paragraph ps-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                                <div class="col-lg-4 col-md-12 justify-content-end pt-2">
+                                    <a class="register_btn" href="http://" target="_blank" rel="noopener noreferer">Select Sport</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- register section end -->
+    <!-- footer -->
+    <footer class="footer_sec pt-3 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-md-12">
+                    <div class="logo_sec">
+                        <ul class="inner_logo d-flex align-items-center">
+                            <li class="pe-4">
+                                <a class="footer_logo" href="http://"><img src="assets/img/redfooterlogo.png" class="rounded mx-auto d-block" alt="..."></a>
+                            </li>
+                            <li class="copy_text">2021. TalentScout. All right reserved.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-md-12">
+                    <div class="terms_sec">
+                        <ul class="inner_terms d-flex pt-1 justify-content-end">
+                            <li class="pe-3">
+                                <a href="http://">Terms</a>
+                            </li>
+                            <li class="pe-3">
+                                <a href="http://">Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-md-12">
+                    <div class="footer_icon">
+                        <ul class="inner_icon d-flex pt-1 justify-content-end">
+                            <li class="pe-3">
+                                <a href="http://"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="pe-3">
+                                <a href="http://"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="">
+                                <a href="http://"><i class="fab fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- jquery -->
+    <script type="text/javascript" src="assets/js/jauery.min.js"></script>
+    <!-- owl_carousel -->
+    <script type="text/javascript" src="assets/js/owl_carousel.js"></script>
+    <!-- custom_js -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <!-- password-validation -->
+    <script type="text/javascript" src="assets/js/password-validation.js"></script>
+    <!-- Bootstrap JS -->
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

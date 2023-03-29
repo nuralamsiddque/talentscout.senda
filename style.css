@@ -1,0 +1,757 @@
+/* custom_font */
+
+@font-face {
+    font-family: "Mont";
+    font-style: normal;
+    font-weight: bold;
+    src: url('assets/fonts/FontfabricMontBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Mont";
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/FontfabricMontRegular.woff2') format('woff2');
+}
+
+ :root {
+    --primery: #b12a27;
+    --bg-bk: #212121;
+    --bg-color: #F6F9F9;
+    --tx-primery: #b12a27;
+    --h-tx-color: #0d0d0d;
+    --border-color: #707070;
+    --snd-brd-color: #DCE3E3;
+    --white-color: #fff !important;
+    /* fontsize */
+    --hading-f-size: 2rem;
+    --second-h-fz: 22px;
+    --small-fz: 14px;
+    --paragraph-fz: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 20px;
+    line-height: 1.2;
+    letter-spacing: 0.8;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+a:focus {
+    outline: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+a img {
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+select {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.padding_t_b {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.border_bottom {
+    width: 60px;
+    height: 4px;
+    background-color: var(--primery);
+    position: relative;
+    border-radius: 4px;
+}
+
+.border_bottom:before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background-color: var(--primery);
+    left: 115%;
+    top: 0px;
+    border-radius: 4px;
+}
+
+body {
+    font-family: 'Mont', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #929292;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    position: relative;
+}
+
+
+/*  header  */
+
+.main_menu {}
+
+.main_menu .nav_menu_item {
+    background-color: var(--bg-bk);
+    z-index: 9999999999999999;
+}
+
+.main_menu .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_menu .nav_menu_item .nav-item a.nav-link {
+    color: var(--white-color);
+    font-size: var(--small-fz);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 20px !important;
+}
+
+.main_menu .nav_menu_item .nav-item {
+    position: relative;
+    background-color: var(--bg-bk);
+}
+
+.main_menu .nav_menu_item li .nav-link:hover,
+.main_menu .active {
+    background-color: #b12a27 !important;
+}
+
+.main_menu button.navbar-toggler:focus {
+    box-shadow: none;
+    border: 2px solid #ffffff80 !important;
+}
+
+
+/* Dropdown Menu */
+
+.main_menu .nav_menu_item li:hover>.dropdown_menu {
+    top: 100%;
+    z-index: -1;
+    transition: all 0.6s 0.2s ease;
+}
+
+.main_menu .dropdown_menu {
+    position: absolute;
+    top: -500%;
+    z-index: -999999 !important;
+    background-color: var(--bg-bk);
+}
+
+.main_menu .dropdown_menu li .dropdown-item {
+    padding: 6px 25px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: var(--white-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: -999999;
+    display: block;
+}
+
+.main_menu .dropdown_menu li a.dropdown-item:hover {
+    background-color: var(--primery);
+}
+
+
+/* Dropdown Menu end */
+
+
+/* login form  */
+
+.main_menu .main_form {
+    left: 38.5% !important;
+}
+
+.main_menu .login_form {}
+
+.main_menu .login_form .login_img {
+    background: url(assets/img/rugby-4.jpg) center center;
+    background-size: cover;
+    padding: 25px 15px 100px;
+}
+
+.main_menu .login_form .login_img .login_text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    line-height: 0.8;
+}
+
+.main_menu .login_form .login_img .border_bottom {
+    width: 30px;
+}
+
+.main_menu .login_form .inner_form {
+    padding: 30px 20px;
+    background-color: #fff;
+}
+
+.main_menu .login_form .inner_form .logn_btn {
+    background: var(--primery);
+    color: #fff;
+    padding: 8px 35px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    border-radius: 50px;
+}
+
+.main_menu .login_form .inner_form .forget_sec a {
+    display: block;
+    color: var(--tx-primery);
+    font-size: 1rem;
+    background-color: #fff !important;
+}
+
+
+/* login form end */
+
+
+/* Registration form */
+
+
+/* text heading section */
+
+.heading_text p {
+    border-top: 2px solid #00cf5d4b;
+}
+
+.heading_text p.actives {
+    border-top: 2px solid #00CF5D;
+}
+
+.heading_text p a {
+    color: var(--h-tx-color);
+    opacity: 0.2;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+}
+
+.heading_text p a.selects {
+    color: var(--h-tx-color);
+    opacity: 1;
+}
+
+.subscription_sec {
+    color: var(--h-tx-color);
+}
+
+
+/* modal */
+
+.model_header_black {
+    background-color: var(--bg-bk);
+    padding: 5px 10px 5px;
+}
+
+.modal-content {
+    background-color: transparent !important;
+}
+
+.main_menu {}
+
+.main_menu li a.active {
+    background: none !important;
+}
+
+.main_menu li a {
+    color: #00cf5d;
+}
+
+
+/* registration request */
+
+.registration_request .border_bottom {
+    background-color: #00CF5D;
+}
+
+.registration_request .border_bottom:before {
+    background-color: #00CF5D;
+}
+
+.registration_request {
+    overflow: hidden;
+    padding: 0 0 150px;
+    background-color: var(--bg-color);
+    position: relative;
+    z-index: 1;
+}
+
+.registration_request:after {
+    content: "";
+    position: absolute;
+    background: url(assets/img/Asset.png) no-repeat;
+    height: 100%;
+    width: 100%;
+    top: -25px;
+    left: 100%;
+    z-index: -1;
+}
+
+
+/* tab nemu */
+
+.registration_request .bg_colors {
+    background-color: #fff;
+    padding-top: 0 !important;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
+}
+
+.registration_request .tab_nav {
+    padding: 0;
+    background: var(--bg-color);
+}
+
+.registration_request .welcome_h_text {
+    color: var(--h-tx-color);
+}
+
+.registration_request .nav-tabs {
+    border-bottom: 1px solid #DCE3E3 !important;
+    border-top: 1px solid #DCE3E3 !important;
+}
+
+.registration_request .nav-link {
+    padding: 12px 35px !important;
+}
+
+.registration_request .nav-link.active {
+    color: #0d0d0d;
+    box-shadow: 0 -3px 0 #00cf5d;
+    border-radius: 0;
+    border: none;
+    border-color: transparent !important;
+    background-color: #fff !important;
+}
+
+.registration_request .nav-link:hover {
+    border-color: transparent !important;
+    box-shadow: 0 -3px 0 #00cf5d;
+    border-radius: 0;
+}
+
+.registration_request .athlete {
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+
+/* tab nemu end */
+
+
+/* Form Section */
+
+.registration_request .r_request_form input[type=checkbox] {
+    border: 2px solid #00CF5D !important;
+    border-radius: 0;
+    padding: 6px;
+}
+
+.registration_request .r_request_form input[type=checkbox]:checked {
+    background-image: url(assets/img/checkbox.svg) !important;
+    background: transparent;
+}
+
+.registration_request .r_request_form input,
+.registration_request .r_request_form select {
+    border: 1px solid var(--snd-brd-color);
+}
+
+.registration_request .r_request_form input:focus,
+.registration_request .r_request_form select:focus {
+    box-shadow: none !important;
+    border: 1px solid var(--snd-brd-color);
+}
+
+.registration_request .r_request_form label {
+    color: var(--h-tx-color);
+}
+
+.registration_request .r_request_form label a {
+    color: var(--h-tx-color);
+}
+
+.registration_request .r_request_form .select_fild {
+    margin-top: 29px;
+}
+
+
+/* Form Section end */
+
+
+/* footer button */
+
+.registration_request .r_request_form {
+    position: relative;
+}
+
+.registration_request .r_request_form .button_sec {
+    position: absolute;
+    bottom: -120px;
+    right: -10px;
+}
+
+.registration_request .r_request_form .button_sec .submit_btn {
+    font-weight: bold;
+    display: inline-block;
+    padding: 6px 35px;
+    color: var(--h-tx-color);
+    background-color: #00CF5D;
+    border-radius: 50px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+}
+
+
+/* Registration form end */
+
+
+/* header end */
+
+
+/* Hero Section */
+
+.hero_sec {
+    min-height: 85vh;
+    background-color: #0000006e;
+    position: relative;
+}
+
+.hero_sec .welcome_sec .hero_button {
+    padding: 0 15px;
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+.hero_sec .welcome_sec .play_text {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.hero_sec .hero_heading {
+    max-width: 24rem;
+}
+
+.hero_sec .welcome_sec .hero_heading .welcome_heading {
+    color: #ffffffff;
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+.hero_sec .welcome_sec .hero_heading .welcome_green {
+    color: var(--tx-primery);
+}
+
+
+/* video section */
+
+.hero_sec .inner_video_sec {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -9;
+}
+
+.hero_sec .inner_video_sec video {
+    min-height: 85vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Hero Section end */
+
+
+/* about section */
+
+.about_sec {
+    background-color: var(--bg-bk);
+    padding: 80px 0 0;
+}
+
+.about_sec .inner_image {}
+
+.about_sec .paragraph_tex_sec p {
+    font-size: 18px;
+    color: var(--white-color);
+    line-height: 1.6;
+    padding: 50px 0 0 40px;
+}
+
+
+/* about section end */
+
+
+/* Icon Card */
+
+.icon_card {
+    background: var(--bg-bk);
+    background-size: cover;
+    background-position: top center;
+}
+
+.icon_card .text_row .right_text p {
+    color: var(--white-color);
+    font-size: var(--paragraph-fz);
+}
+
+.icon_card .text_row .right_text i {
+    color: var(--white-color);
+    font-size: var(--small-fz);
+    padding-right: 10px;
+}
+
+.icon_card .card_row .card_sec {
+    background-color: var(--white-color);
+    padding: 40px 20px;
+    border-radius: 4px;
+}
+
+.icon_card .card_row .card_sec .card_top_sec .sport_name .author_name {
+    font-size: var(--paragraph-fz);
+    color: var(--h-tx-color);
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.icon_card .card_row .card_sec .card_bottom_sec .btn_sec {
+    display: inline-block;
+    background-color: var(--primery);
+    padding: 8px 40px;
+    border-radius: 35px;
+    font-size: var(--small-fz);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.icon_card .contact_btn .show_more_btn {
+    display: inline-block;
+    border: 1px solid var(--primery);
+    color: var(--white-color);
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: var(--small-fz);
+    text-transform: uppercase;
+}
+
+.icon_card .paragraphs_text {
+    font-size: var(--paragraph-fz);
+}
+
+
+/* icon_card end*/
+
+
+/* team Card */
+
+.team_card_sec {
+    background-color: var(--bg-color);
+}
+
+.team_card_sec .team_row .card_sec {
+    background-color: var(--white-color);
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 1px #ddd;
+    margin: 2px;
+}
+
+.team_card_sec .team_row .card_sec .card_top_sec .card_img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0 !important;
+}
+
+.team_card_sec .team_row .card_bottom_sec {
+    margin-top: -56px;
+}
+
+.team_card_sec .team_row .card_sec .card_bottom_sec .pro_sec {
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.team_card_sec .team_row .card_sec .card_bottom_sec .pro_icon {
+    font-size: 14px;
+    color: var(--white-color);
+}
+
+.team_card_sec .team_row .card_sec .card_bottom_sec .pro_icon i {
+    color: var(--white-color);
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.team_card_sec .team_row .team_button .select_btn {
+    display: inline-block;
+    background-color: var(--primery);
+    padding: 8px 40px;
+    border-radius: 35px;
+    font-size: var(--small-fz);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white-color);
+    letter-spacing: 0.6px;
+}
+
+
+/* carousel css */
+
+.team_card_sec .owl-dots {
+    text-align: right;
+    margin-top: -29px;
+}
+
+.team_card_sec .team_row .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    border: 1px solid var(--primery);
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+
+.team_card_sec .team_row .owl-nav {
+    color: var(--primery);
+    padding-top: 10px;
+}
+
+.team_card_sec .team_row .owl-dots .owl-dot.active span {
+    background-color: var(--primery);
+    border-radius: 50px;
+}
+
+.team_card_sec .team_row .owl-prev span {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.team_card_sec .team_row .owl-next span {
+    font-size: 30px;
+}
+
+
+/* team Card end*/
+
+
+/* register section */
+
+.register_sec {
+    padding: 70px 0px 29px;
+    background-color: var(--bg-color);
+}
+
+.register_sec .text_row .left_text .heading_text {
+    color: var(--h-tx-color);
+}
+
+.register_sec .text_row .register_box {
+    background: var(--primery);
+    padding: 50px 20px 30px;
+    border-radius: 4px;
+}
+
+.register_sec .text_row .register_box .box_paragraph {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.register_sec .text_row .register_box .register_btn {
+    display: inline-block;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+    padding: 10px 23px;
+    border-radius: 50px;
+    font-size: var(--small-fz);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* register section end */
+
+
+/* footer */
+
+.footer_sec {}
+
+.footer_sec .logo_sec .inner_logo .copy_text {
+    color: var(--h-tx-color);
+    opacity: 0.5;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+}
+
+.footer_sec .terms_sec .inner_terms li a {
+    color: var(--h-tx-color);
+    display: block;
+}
+
+.footer_sec .footer_icon .inner_icon li a {
+    display: block;
+}
+
+.footer_sec .footer_icon .inner_icon li a i {
+    color: var(--tx-primery);
+}
+
+
+/* footer end */
